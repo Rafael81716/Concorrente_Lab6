@@ -12,7 +12,7 @@ public class DisplayTasks implements Runnable{
             LinkedBlockingDeque<Task> lista = map.get(id);
             for (int i=0; i < map.get(id).size(); i++){
                 try{
-                    System.out.println(lista.take().id);
+                    System.out.println("concluiu tarefa " + lista.take().id + "\n");
                 }catch(Exception e){
 
                 }
